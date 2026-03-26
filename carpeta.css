@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('https://img.freepik.com/vector-gratis/fondo-acuarela-rosa-pintado-mano-detallado_1048-17039.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background: linear-gradient(90deg, #f78fb3, #e056fd);
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 28px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* 📱 Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    .galeria {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .galeria img {
+        width: 100px;
+        height: 100px;
+    }
+}
